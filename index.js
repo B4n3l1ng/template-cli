@@ -38,4 +38,7 @@ inquirer.prompt(QUESTIONS).then(answers => {
   fs.mkdirSync(`${CURR_DIR}/${projectName}`);
 
   createDirectoryContents(templatePath, projectName);
+  console.log(
+    `Created successfully. You can now cd into ./${projectName} and start your coding! Happy coding!`
+  );
 });
